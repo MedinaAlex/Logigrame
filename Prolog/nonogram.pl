@@ -4,7 +4,7 @@ main :-
 		open('result_prolog.txt',write,Stream2),
 		/* Puzzle dinosaure*/
 		statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]),
-    open('C:/Users/Romain/Documents/EPSI 2/IA/Prolog/dinosaure.txt', read, Str),
+    open('dinosaure.txt', read, Str),
     read_file(Str,Lines, Stream2),
 		statistics(walltime, [NewTimeSinceStart | [ExecutionTime]]),
 		write('Execution took '), write(ExecutionTime), write(' ms.'), nl,
@@ -12,7 +12,7 @@ main :-
 		
 		/* Puzzle escargot*/
 		statistics(walltime, [TimeSinceStart2 | [TimeSinceLastCall2]]),
-		open('C:/Users/Romain/Documents/EPSI 2/IA/Prolog/escargot.txt', read, Str2),
+		open('escargot.txt', read, Str2),
     read_file(Str2,Lines2, Stream2),
 		statistics(walltime, [NewTimeSinceStart2 | [ExecutionTime2]]),
 		write('Execution took '), write(ExecutionTime2), write(' ms.'), nl,
@@ -20,7 +20,7 @@ main :-
 		
 		/* Puzzle piano*/
 		statistics(walltime, [TimeSinceStart3 | [TimeSinceLastCall3]]),
-		open('C:/Users/Romain/Documents/EPSI 2/IA/Prolog/piano.txt', read, Str3),
+		open('piano.txt', read, Str3),
     read_file(Str3,Lines3, Stream2),
 		statistics(walltime, [NewTimeSinceStart3 | [ExecutionTime3]]),
 		write('Execution took '), write(ExecutionTime3), write(' ms.'), nl,
@@ -28,7 +28,7 @@ main :-
 		
 		/* Puzzle bufle*/
 		statistics(walltime, [TimeSinceStart4 | [TimeSinceLastCall4]]),
-		open('C:/Users/Romain/Documents/EPSI 2/IA/Prolog/buffle.txt', read, Str4),
+		open('buffle.txt', read, Str4),
     read_file(Str4,Lines4, Stream2),
 		statistics(walltime, [NewTimeSinceStart4 | [ExecutionTime4]]),
 		write('Execution took '), write(ExecutionTime4), write(' ms.'), nl,
